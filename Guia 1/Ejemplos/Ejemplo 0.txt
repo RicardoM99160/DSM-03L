@@ -1,0 +1,15 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+
+    System.out.println("¿Cómo te llamas? ");
+    String nombre = in.nextLine();
+
+    System.out.println("¿Cuántos años tiénes? ");
+    int edad = in.nextInt();
+
+    System.out.println("Hola " + nombre + ". El año que viene tendrás " + (edad+1));
+  }
+}

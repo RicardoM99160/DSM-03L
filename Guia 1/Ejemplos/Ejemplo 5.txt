@@ -1,0 +1,21 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner teclado = new Scanner(System.in);
+    int suma, f, valor, promedio;
+    suma = 0;
+
+    for(f = 1; f <= 10; f++){
+      System.out.print("Ingrese valor: ");
+      valor = teclado.nextInt();
+      suma += valor;
+    }
+
+    System.out.println("La suma es: "+ suma);
+
+    promedio = suma / 10;
+    System.out.println("El promedio es: "+ promedio);
+  }
+}

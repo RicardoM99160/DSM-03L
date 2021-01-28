@@ -1,0 +1,10 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Cadena5 cad = new Cadena5();
+    cad.listar();
+    cad.consultaMail();
+    cad.sinArroba();
+  }
+}

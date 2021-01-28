@@ -1,0 +1,40 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner teclado = new Scanner(System.in);
+    int n, x, y;
+    int centro = 0, cuadrante1 = 0, cuadrante2 = 0, cuadrante3 = 0, cuadrante4 = 0;
+
+    System.out.print("Indique la cantidad de coordenadas que desea ingresar: ");
+    n = teclado.nextInt();
+
+    for(int i = 0; i < n; i++){
+      System.out.println("Ingresando los datos de la coordenada "+ (i+1) +": ");
+      System.out.print("Ingrese el valor en x: ");
+      x = teclado.nextInt();
+      System.out.print("Ingrese el valor en y: ");
+      y = teclado.nextInt();
+
+      if(x == 0 && y == 0){
+        centro++;
+      }else if(x > 0 && y > 0){
+        cuadrante1++;
+      }else if(x < 0 && y > 0){
+        cuadrante2++;
+      }else if(x < 0 && y < 0){
+        cuadrante3++;
+      }else{
+        cuadrante4++;
+      }
+    }
+
+    System.out.println("Se han ingresado "+n+" puntos");
+    System.out.println("Puntos ingresados ubicados en el centro: "+centro);
+    System.out.println("Puntos ingresados ubicados en el cuadrante 1: "+cuadrante1);
+    System.out.println("Puntos ingresados ubicados en el cuadrante 2: "+cuadrante2);
+    System.out.println("Puntos ingresados ubicados en el cuadrante 3: "+cuadrante3);
+    System.out.println("Puntos ingresados ubicados en el cuadrante 4: "+cuadrante4);
+  }
+}
