@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "dComplementaria_Guia3"
