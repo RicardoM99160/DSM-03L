@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resultadosActividad">
+
+    <LinearLayout
+        android:layout_width="334dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="212dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: " />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/txtvHoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horas trabajadas:" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/txtvSueldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sueldo:" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/txtvISSS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descuento ISSS:" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/txtvAFP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descuento AFP:" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/txtvRenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descuento Renta:" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/txtvSueldoNeto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sueldo neto:" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="finalizar"
+            android:text="Finalizar" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
