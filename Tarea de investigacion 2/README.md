@@ -10,6 +10,7 @@
 
 ## Aplicación
 La aplicación desarrollada es una calculadora geométrica que permite calcular el área y perímetro de un Cuadrado, Triángulo, Circulo y Rectángulo.
+
 En el código de la aplicación se aplicarón los siguientes principios SOLID:
  * Responsabilidad Única (S)
  * Abierto / Cerrado (O)
